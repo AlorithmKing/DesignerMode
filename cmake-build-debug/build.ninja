@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_DesignerMode: phony || CMakeFiles/Design
 
 build CMakeFiles/DesignerMode.dir/AbstratFactory.cpp.obj: CXX_COMPILER__DesignerMode_Debug C$:/Users/24091/Desktop/Clion_Project/DesignerMode/AbstratFactory.cpp || cmake_object_order_depends_target_DesignerMode
   DEP_FILE = CMakeFiles\DesignerMode.dir\AbstratFactory.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\DesignerMode.dir
   OBJECT_FILE_DIR = CMakeFiles\DesignerMode.dir
 
@@ -84,7 +84,7 @@ build cmake_object_order_depends_target_ObseverMode: phony || CMakeFiles/Obsever
 
 build CMakeFiles/ObseverMode.dir/ObseverMode.cpp.obj: CXX_COMPILER__ObseverMode_Debug C$:/Users/24091/Desktop/Clion_Project/DesignerMode/ObseverMode.cpp || cmake_object_order_depends_target_ObseverMode
   DEP_FILE = CMakeFiles\ObseverMode.dir\ObseverMode.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\ObseverMode.dir
   OBJECT_FILE_DIR = CMakeFiles\ObseverMode.dir
 
@@ -117,7 +117,7 @@ build cmake_object_order_depends_target_Adapter: phony || CMakeFiles/Adapter.dir
 
 build CMakeFiles/Adapter.dir/Adapter.cpp.obj: CXX_COMPILER__Adapter_Debug C$:/Users/24091/Desktop/Clion_Project/DesignerMode/Adapter.cpp || cmake_object_order_depends_target_Adapter
   DEP_FILE = CMakeFiles\Adapter.dir\Adapter.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\Adapter.dir
   OBJECT_FILE_DIR = CMakeFiles\Adapter.dir
 
@@ -150,7 +150,7 @@ build cmake_object_order_depends_target_AVL: phony || CMakeFiles/AVL.dir
 
 build CMakeFiles/AVL.dir/AVLTest.cpp.obj: CXX_COMPILER__AVL_Debug C$:/Users/24091/Desktop/Clion_Project/DesignerMode/AVLTest.cpp || cmake_object_order_depends_target_AVL
   DEP_FILE = CMakeFiles\AVL.dir\AVLTest.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\AVL.dir
   OBJECT_FILE_DIR = CMakeFiles\AVL.dir
 
@@ -171,6 +171,39 @@ build AVL.exe: CXX_EXECUTABLE_LINKER__AVL_Debug CMakeFiles/AVL.dir/AVLTest.cpp.o
   TARGET_FILE = AVL.exe
   TARGET_IMPLIB = libAVL.dll.a
   TARGET_PDB = AVL.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ProVectorTest
+
+
+#############################################
+# Order-only phony target for ProVectorTest
+
+build cmake_object_order_depends_target_ProVectorTest: phony || CMakeFiles/ProVectorTest.dir
+
+build CMakeFiles/ProVectorTest.dir/ProVectorTest.cpp.obj: CXX_COMPILER__ProVectorTest_Debug C$:/Users/24091/Desktop/Clion_Project/DesignerMode/ProVectorTest.cpp || cmake_object_order_depends_target_ProVectorTest
+  DEP_FILE = CMakeFiles\ProVectorTest.dir\ProVectorTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles\ProVectorTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProVectorTest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ProVectorTest
+
+
+#############################################
+# Link the executable ProVectorTest.exe
+
+build ProVectorTest.exe: CXX_EXECUTABLE_LINKER__ProVectorTest_Debug CMakeFiles/ProVectorTest.dir/ProVectorTest.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ProVectorTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ProVectorTest.exe
+  TARGET_IMPLIB = libProVectorTest.dll.a
+  TARGET_PDB = ProVectorTest.exe.dbg
 
 
 #############################################
@@ -206,6 +239,8 @@ build DesignerMode: phony DesignerMode.exe
 
 build ObseverMode: phony ObseverMode.exe
 
+build ProVectorTest: phony ProVectorTest.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +249,7 @@ build ObseverMode: phony ObseverMode.exe
 #############################################
 # Folder: C:/Users/24091/Desktop/Clion_Project/DesignerMode/cmake-build-debug
 
-build all: phony DesignerMode.exe ObseverMode.exe Adapter.exe AVL.exe
+build all: phony DesignerMode.exe ObseverMode.exe Adapter.exe AVL.exe ProVectorTest.exe
 
 # =============================================================================
 # Built-in targets
